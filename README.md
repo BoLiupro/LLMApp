@@ -5,7 +5,7 @@ LLMApp 是一个基于大语言模型的层次化移动应用预测框架，利�
 
 ## Framework Overview
 
-![Framework](framework.pdf)
+![Framework](framework.png)
 
 ## Dataset
 模型使用两个真实世界移动应用数据集（含位置、时间、App、流量等字段）：
