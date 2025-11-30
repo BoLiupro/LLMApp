@@ -1,4 +1,4 @@
-# LLMApp: Large Language Model for Mobile App Usage Prediction
+# LLMApp: Unleash the Power of Large Language Model for Mobile App Usage Prediction
 
 ## Abstract
 Mobile applications serve as gateways to many essential services in human daily life. However, delays, unstable resource usage, or inefficient traffic handling greatly affect the overall service experience. An effective strategy to address these issues is to predict the app usage and load the subsequent app into memory in advance. Mobile app usage prediction can help reduce service delay, support better resource allocation, and assist network operators in managing traffic changes, ultimately improving the quality and responsiveness of mobile services.
