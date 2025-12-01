@@ -15,7 +15,7 @@ The model uses two real-world mobile app usage datasets (including fields such a
 - Shanghai Mobile App Usage Dataset（2016）  
 - Nanchang Mobile App Usage Dataset（2022）  
 
-Dat source：  
+Data source：  
 https://fi.ee.tsinghua.edu.cn/appusage/
 
 ## Run
