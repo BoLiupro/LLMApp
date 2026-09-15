@@ -1,34 +1,71 @@
-# LLMApp: Unleash the Power of Large Language Model for Mobile App Usage Prediction
+<div align="center">
 
-## Abstract
-Mobile applications serve as gateways to many essential services in human daily life. However, delays, unstable resource usage, or inefficient traffic handling greatly affect the overall service experience. An effective strategy to address these issues is to predict the app usage and load the subsequent app into memory in advance. Mobile app usage prediction can help reduce service delay, support better resource allocation, and assist network operators in managing traffic changes, ultimately improving the quality and responsiveness of mobile services.
-In this paper, we introduce LLMApp, a hierarchical prediction framework that leverages large language models to predict mobile app usage. First, LLMApp employs a prompt compressor to filter redundant long-term usage logs to obtain concise summary prompts that the LLM can effectively reason over. Second, a context interpreter encodes diverse contextual information into unified representations and projects them into the LLM’s semantic space, enabling joint interpretation of spatiotemporal and behavioral signals. Finally, a hierarchical predictor leverages the semantic reasoning capabilities of LLMs to perform coarse-to-fine mobile app usage prediction.
-Experiments on two real-world datasets show that LLMApp outperforms baseline approaches under the metrics of Top-k Accuracy (ACC@K), Mean Reciprocal Rank (MRR@K), and Normalized Discounted Cumulative Gain (NDCG@K). Further analysis demonstrates that LLMApp exhibits strong robustness and scalability, achieves effective redundancy filtering, and accurately captures spatiotemporal patterns underlying user app usage behavior.
+# LLMApp
+### Unleashing the Power of Large Language Model for Mobile App Usage Prediction
 
-## Framework Overview
+[![Venue](https://img.shields.io/badge/IEEE-TSC%202026-blue)](https://ieeexplore.ieee.org/)
+[![Status](https://img.shields.io/badge/Status-Accepted-success)](https://tong89.github.io/tongli.github.io/)
 
-![Framework](framework.png)
+**Bo Liu · Tong Li · Miao Xiao · Beihao Xia · Zhu Xiao · Zhuo Tang · Kenli Li**
+
+*IEEE Transactions on Services Computing, 2026 — Accepted*
+
+</div>
+
+---
+
+## Overview
+
+**LLMApp** is a hierarchical mobile app usage prediction framework that uses large language models as semantic reasoning engines. The framework is designed to model long-term usage histories, heterogeneous contextual information, and coarse-to-fine app-selection behavior in a unified prediction pipeline.
+
+<p align="center">
+  <img src="framework.png" width="92%" alt="LLMApp framework" />
+</p>
+
+## Highlights
+
+- **Prompt Compressor** removes redundant long-term usage history while preserving behavior patterns useful for prediction.
+- **Context Interpreter** projects heterogeneous contextual signals into the LLM semantic space.
+- **Hierarchical Predictor** performs coarse-to-fine semantic reasoning for mobile app usage prediction.
+- Evaluated on **Shanghai** and **Nanchang** real-world app-usage datasets.
+- Uses ranking-oriented metrics including **ACC@K, MRR@K, and NDCG@K**.
+
+## Paper
+
+The paper was accepted by **IEEE Transactions on Services Computing (TSC)** in September 2026.
+
+> The final IEEE Xplore record may be updated during the publisher's production/indexing process. Please use the publication title and author list above when searching IEEE Xplore if the final article page is not yet available.
 
 ## Dataset
-The model uses two real-world mobile app usage datasets (including fields such as location, time, app, traffic, etc.)：
 
-- Shanghai Mobile App Usage Dataset（2016）  
-- Nanchang Mobile App Usage Dataset（2022）  
+The experiments use two real-world mobile app usage datasets:
 
-Data source：  
-https://fi.ee.tsinghua.edu.cn/appusage/
+- **Shanghai Mobile App Usage Dataset** (2016)
+- **Nanchang Mobile App Usage Dataset** (2022)
+
+Original data source: https://fi.ee.tsinghua.edu.cn/appusage/
+
+Please follow the original dataset terms and privacy requirements.
 
 ## Run
+
 ```bash
 chmod +x scripts/run_shanghai.sh
 bash scripts/run_shanghai.sh
 ```
 
 ## Citation
-```
-@article{LLMApp2025,
-  title={LLMApp: Unleashing the Power of Large Language Model for Mobile App Usage Prediction},
-  author={Bo Liu and Tong Li and Miao Xiao and Beihao Xia and Zhu Xiao and Zhuo Tang and Kenli Li},
-  year={2025}
+
+```bibtex
+@article{liu2026llmapp,
+  title   = {LLMApp: Unleashing the Power of Large Language Model for Mobile App Usage Prediction},
+  author  = {Liu, Bo and Li, Tong and Xiao, Miao and Xia, Beihao and Xiao, Zhu and Tang, Zhuo and Li, Kenli},
+  journal = {IEEE Transactions on Services Computing},
+  year    = {2026},
+  note    = {Accepted}
 }
 ```
+
+## Contact
+
+For questions about the paper or code, please open an issue or contact **Bo Liu** at `liubo317@hnu.edu.cn`.
