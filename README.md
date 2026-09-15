@@ -16,25 +16,41 @@
 
 ## Overview
 
-**LLMApp** is a hierarchical mobile app usage prediction framework that uses large language models as semantic reasoning engines. The framework is designed to model long-term usage histories, heterogeneous contextual information, and coarse-to-fine app-selection behavior in a unified prediction pipeline.
+**LLMApp** is a hierarchical mobile app usage prediction framework that leverages large language models as semantic reasoning engines. Instead of directly treating app histories as flat sequential signals, LLMApp compresses long-term behavioral logs, interprets heterogeneous contextual information, and performs coarse-to-fine reasoning over app usage behavior.
 
 <p align="center">
   <img src="framework.png" width="92%" alt="LLMApp framework" />
 </p>
 
+## Abstract
+
+Mobile applications serve as gateways to many essential services in everyday life. However, service delays, unstable resource usage, and inefficient traffic handling can substantially affect the overall user experience. Predicting which application a user is likely to access next enables systems to preload applications into memory, reduce service latency, improve resource allocation, and help network operators better respond to traffic variations. In this work, we introduce **LLMApp**, a hierarchical prediction framework that leverages large language models for mobile app usage prediction. First, LLMApp employs a **Prompt Compressor** to remove redundant information from long-term app usage histories and convert them into concise behavior summaries that an LLM can effectively reason over. Second, a **Context Interpreter** encodes heterogeneous contextual signals into unified representations and projects them into the semantic space of the LLM, enabling joint reasoning over spatiotemporal and behavioral information. Finally, a **Hierarchical Predictor** exploits the semantic reasoning capability of LLMs to perform coarse-to-fine prediction of future mobile app usage. Experiments on two real-world datasets show that LLMApp consistently outperforms competitive baselines under **Top-k Accuracy (ACC@K)**, **Mean Reciprocal Rank (MRR@K)**, and **Normalized Discounted Cumulative Gain (NDCG@K)**. Additional analyses demonstrate strong robustness and scalability, effective redundancy filtering, and the ability to capture spatiotemporal patterns underlying user app usage behavior.
+
 ## Highlights
 
-- **Prompt Compressor** removes redundant long-term usage history while preserving behavior patterns useful for prediction.
-- **Context Interpreter** projects heterogeneous contextual signals into the LLM semantic space.
-- **Hierarchical Predictor** performs coarse-to-fine semantic reasoning for mobile app usage prediction.
+- **Prompt Compressor** removes redundant long-term usage history while retaining behavior patterns useful for prediction.
+- **Context Interpreter** unifies heterogeneous contextual signals and aligns them with the LLM semantic space.
+- **Hierarchical Predictor** performs coarse-to-fine semantic reasoning for next-app prediction.
 - Evaluated on **Shanghai** and **Nanchang** real-world app-usage datasets.
 - Uses ranking-oriented metrics including **ACC@K, MRR@K, and NDCG@K**.
 
-## Paper
+## Paper & Download
 
-The paper was accepted by **IEEE Transactions on Services Computing (TSC)** in September 2026.
+The paper was accepted by **IEEE Transactions on Services Computing (TSC)** on **September 6, 2026**.
 
-> The final IEEE Xplore record may be updated during the publisher's production/indexing process. Please use the publication title and author list above when searching IEEE Xplore if the final article page is not yet available.
+- **Publisher:** IEEE Transactions on Services Computing
+- **Status:** Accepted; publisher production/indexing is in progress.
+- **IEEE Xplore:** https://ieeexplore.ieee.org/
+
+> The final article page / PDF link will be updated once the publisher completes production and indexing.
+
+## Method
+
+LLMApp consists of three main stages:
+
+1. **Long-term Behavior Compression** — compresses lengthy app usage histories into concise semantic summaries while preserving predictive behavioral patterns.
+2. **Contextual Semantic Alignment** — encodes temporal, spatial, and behavioral context and aligns it with the representation space of the LLM.
+3. **Hierarchical App Prediction** — performs coarse-to-fine semantic reasoning to rank likely future app usage.
 
 ## Dataset
 
