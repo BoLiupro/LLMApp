@@ -4,11 +4,11 @@
 ### Unleashing the Power of Large Language Model for Mobile App Usage Prediction
 
 [![Venue](https://img.shields.io/badge/IEEE-TSC%202026-blue)](https://ieeexplore.ieee.org/)
-[![Status](https://img.shields.io/badge/Status-Accepted-success)](https://tong89.github.io/tongli.github.io/)
+[![Status](https://img.shields.io/badge/Status-Published-success)](https://doi.org/10.1109/TSC.2026.3732454)
 
 **Bo Liu · Tong Li · Miao Xiao · Beihao Xia · Zhu Xiao · Zhuo Tang · Kenli Li**
 
-*IEEE Transactions on Services Computing, 2026 — Accepted*
+*IEEE Transactions on Services Computing, 2026 — Published*
 
 </div>
 
@@ -152,14 +152,14 @@ LLMApp/
 
 ## Paper & Download
 
-The paper was accepted by **IEEE Transactions on Services Computing (TSC)** on **September 6, 2026**.
+The paper is published in **IEEE Transactions on Services Computing (TSC)**, **2026**.
 
 - **Publisher:** IEEE Transactions on Services Computing
-- **Status:** Accepted; publisher production/indexing is in progress.
-- **IEEE Xplore:** https://ieeexplore.ieee.org/
+- **Status:** Published
+- **DOI / Publisher page:** https://doi.org/10.1109/TSC.2026.3732454
 - **Framework PDF:** [`framework.pdf`](framework.pdf)
 
-> The final article page / publisher PDF link will be added once IEEE production and indexing are complete.
+> The publisher PDF may require institutional or personal access.
 
 ## Citation
 
@@ -169,7 +169,8 @@ The paper was accepted by **IEEE Transactions on Services Computing (TSC)** on *
   author  = {Liu, Bo and Li, Tong and Xiao, Miao and Xia, Beihao and Xiao, Zhu and Tang, Zhuo and Li, Kenli},
   journal = {IEEE Transactions on Services Computing},
   year    = {2026},
-  note    = {Accepted}
+  doi     = {10.1109/TSC.2026.3732454},
+  note    = {Published}
 }
 ```
 
